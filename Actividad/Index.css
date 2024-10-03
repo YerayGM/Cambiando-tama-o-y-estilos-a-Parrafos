@@ -22,3 +22,9 @@
     .font-courier {
         font-family: 'Courier New', Courier, monospace;
     }
+    .fondo-verde {
+        background-color: green;
+    }
+    .fondo-azul {
+        background-color: blue;
+    }

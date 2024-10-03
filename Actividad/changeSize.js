@@ -7,7 +7,6 @@ function modificarTexto(tipo, valor, parrafo) {
         alert('No existe el párrafo con ese id');
         return;
     }
-
     switch (tipo) {
         case 'size':
             cambiarTamaño(valor, [elemento]);
@@ -17,6 +16,9 @@ function modificarTexto(tipo, valor, parrafo) {
             break;
         case 'font':
             cambiarFuente(valor, [elemento]);
+            break;
+        case 'fondo':
+            cambiarFondo(valor, [elemento]);
             break;
     }
 }
@@ -36,6 +38,9 @@ function cambiarEstilo(tipo, valor) {
                 break;
             case 'font':
                 cambiarFuente(valor, parrafos);
+                break;
+            case 'fondo':
+                cambiarFondo(valor, parrafos);
                 break;
         }
     }
@@ -70,6 +75,17 @@ function cambiarFuente(fuente, elementos) {
             elemento.classList.add('font-verdana');
         } else if (fuente === 'courier') {
             elemento.classList.add('font-courier');
+        }
+    });
+}
+
+function cambiarFondo(fuente, elementos) {
+    elementos.forEach(elemento => {
+        elemento.classList.remove('fondo-verde', 'fondo-azul');
+        if (fuente === 'verde') {
+            elemento.classList.add('fondo-verde');
+        } else if (fuente === 'azul') {
+            elemento.classList.add('fondo-azul');
         }
     });
 }
