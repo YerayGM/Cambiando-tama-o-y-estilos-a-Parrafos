@@ -2,16 +2,25 @@
 <html lang="es">
 <head>
    <meta charset="UTF-8">
+   <link rel="stylesheet" href="Index.css">
    <title>Cambiando el tamaño del texto</title>
 </head>
 <body>
-   <p id="parrafo1">Texto a agrandar, reducir o dejar de forma original<strong> id = parrafo1</strong></p>
-   <p id="parrafo2">Este es el segundo párrafo <strong> id = parrafo2</strong></p>
+   <p id="parrafo1" class="parrafo">Texto a agrandar, reducir o dejar de forma original <strong>id = parrafo1</strong></p>
+   <p id="parrafo2" class="parrafo">Este es el segundo párrafo <strong>id = parrafo2</strong></p>
 
-   <input type="text" name="parrafo" id="parrafo">
-   <button type="submit" onclick="modificarTexto('aumentar', 0.05, document.getElementById('parrafo').value);">Agrandar</button>
-   <button type="submit" onclick="modificarTexto('reducir', 0.05, document.getElementById('parrafo').value);">Reducir</button>
-   <button type="submit" onclick="modificarTexto('original', 0.05, document.getElementById('parrafo').value);">Original</button>
+   <!-- Input para seleccionar párrafo -->
+   <input type="text" name="parrafo" id="parrafo" placeholder="Escribe el ID del párrafo">
+   
+   <!-- Botones para acciones globales o individuales -->
+   <button onclick="cambiarEstilo('size', 'aumentar');">Aumentar tamaño</button>
+   <button onclick="cambiarEstilo('size', 'reducir');">Reducir tamaño</button>
+   <button onclick="cambiarEstilo('size', 'original');">Tamaño original</button>
+   <button onclick="cambiarEstilo('color', 'red');">Color rojo</button>
+   <button onclick="cambiarEstilo('color', 'blue');">Color azul</button>
+   <button onclick="cambiarEstilo('font', 'verdana');">Fuente Verdana</button>
+   <button onclick="cambiarEstilo('font', 'courier');">Fuente Courier</button>
+
    <div id="contenedor"></div>
 <script src="changeSize.js"></script>
 </body>
