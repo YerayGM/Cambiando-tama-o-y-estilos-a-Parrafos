@@ -1,30 +1,34 @@
-       /* Estilos para los párrafos */
-    .parrafo {
-        font-size: 1em;
-        color: black;
-        font-family: Arial, sans-serif;
-    }
-    .size-large {
-        font-size: 2em;
-    }
-    .size-small {
-        font-size: 0.8em;
-    }
-    .color-red {
-        color: red;
-    }
-    .color-blue {
-        color: blue;
-    }
-    .font-verdana {
-        font-family: Verdana, sans-serif;
-    }
-    .font-courier {
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .fondo-verde {
-        background-color: green;
-    }
-    .fondo-azul {
-        background-color: blue;
-    }
+/* Estilos para los párrafos */
+.parrafo {
+    font-size: 1em;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+.size-large {
+    font-size: 2em;
+}
+.size-small {
+    font-size: 0.8em;
+}
+.color-red {
+    color: red;
+}
+.color-blue {
+    color: blue;
+}
+.font-verdana {
+    font-family: Verdana, sans-serif;
+}
+.font-courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+.fondo-verde {
+    background-color: green;
+}
+.fondo-azul {
+    background-color: blue;
+}
+.marcadoParrafo {
+    border: 2px solid yellow; /* Cambia el color o estilo según prefieras */
+    background-color: rgba(255, 255, 0, 0.2); /* Opcional: fondo amarillento */
+}
